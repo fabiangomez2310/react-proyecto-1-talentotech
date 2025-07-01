@@ -2,7 +2,7 @@ import React from "react";
 import { Link, NavLink, Outlet } from "react-router-dom";
 import "./Sidebar.css";
 
-export const SidebarDiseños = () => {
+export const SidebarDisenos = () => {
   return (
     <div className="sidebar-layout">
       <aside>

@@ -1,14 +1,15 @@
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import { Navbar } from "./components/Navbar/Navbar";
-import { SidebarDiseños } from "./components/Sidebar/SidebarDiseños";
-import { Diseno1 } from "./components/Diseños/Diseno1";
-import { Diseno2 } from "./components/Diseños/Diseno2";
-import { Diseno3 } from "./components/Diseños/Diseno3";
+import { SidebarDisenos } from "./components/Sidebar/SidebarDisenos";
+import { Diseno1 } from "./components/Disenos/Diseno1";
+import { Diseno2 } from "./components/Disenos/Diseno2";
+import { Diseno3 } from "./components/Disenos/Diseno3";
+import { Diseno4 } from "./components/Disenos/Diseno4";
 import { SidebarAdministracion } from "./components/Sidebar/SidebarAdministracion";
 import { Docentes } from "./components/Docentes/Docentes";
 import { Estudiantes } from "./components/Estudiantes/Estudiantes";
-import { Diseno4 } from "./components/Diseños/Diseno4";
+
 
 function App() {
   return (
@@ -16,7 +17,7 @@ function App() {
       <Navbar />
       <div className="app-layout">
         <Routes>
-          <Route path="/disenos" element={<SidebarDiseños />}>
+          <Route path="/disenos" element={<SidebarDisenos />}>
 
             <Route path="diseno1" element={<Diseno1 />} />
             <Route path="diseno2" element={<Diseno2 />} />
