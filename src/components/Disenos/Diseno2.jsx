@@ -1,7 +1,4 @@
-import React from "react";
-
 import styles from "./Diseno2.module.css";
-import image from "../../assets/img/image3.jpg";
 
 export const Diseno2 = () => {
   return (
@@ -9,7 +6,7 @@ export const Diseno2 = () => {
       <div className={styles.card}>
         <img
           className={styles.avatar}
-          src={image}
+          src="https://res.cloudinary.com/dqkg8y5zk/image/upload/v1751354019/image2_maujos.jpg"
           alt=""
           height="200px"
           width="200px"

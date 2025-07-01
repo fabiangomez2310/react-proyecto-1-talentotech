@@ -1,11 +1,13 @@
-import React from "react";
 import styles from "./Diseno3.module.css";
-import image from "./../../assets/img/papelhigienico.png";
 
 export const Diseno3 = () => {
   return (
     <div className={styles.productCard}>
-      <img className={styles.productImage} src={image} alt="Toilet Roll" />
+      <img
+        className={styles.productImage}
+        src="https://res.cloudinary.com/dqkg8y5zk/image/upload/v1751354020/image3_lxui3o.png"
+        alt="Toilet Roll"
+      />
       <h2 className={styles.productTitle}>SINGLE TOILET ROLL</h2>
       <p className={styles.productSubtitle}>POPULAR SELLER</p>
       <p className={styles.productPrice}>£9.99</p>

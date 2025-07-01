@@ -1,6 +1,4 @@
-import React from "react";
 import styles from "./Diseno1.module.css";
-import scarecrow from "./../../assets/img/scarecrow.png";
 
 export const Diseno1 = () => {
   return (
@@ -8,7 +6,11 @@ export const Diseno1 = () => {
       <div className={styles.header}>404 NOT FOUND</div>
 
       <div className={styles.main}>
-        <img src={scarecrow} alt="Scarecrow" className={styles.image} />
+        <img
+          src="https://res.cloudinary.com/dqkg8y5zk/image/upload/v1751354019/image1_w6xd1x.png"
+          alt="Scarecrow"
+          className={styles.image}
+        />
 
         <div className={styles.content}>
           <h1 className={styles.title}>I have bad news for you</h1>
