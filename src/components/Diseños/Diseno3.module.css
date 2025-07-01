@@ -1,0 +1,87 @@
+.productCard {
+  width: 250px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25); /* más difusa e intensa */
+  font-family: Arial, sans-serif;
+  margin: 30px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.productImage {
+  width: 130px;
+  height: 130px;
+  align-self: center;
+  margin-bottom: 20px;
+}
+
+.productTitle {
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 0;
+  color: #000;
+}
+
+.productSubtitle {
+  font-size: 12px;
+  color: #888;
+  margin: 0; /* pegado al título */
+}
+
+.productPrice {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px 0 10px 0;
+  color: #000;
+}
+
+.productDescription {
+  font-size: 11px; /* más pequeño como en la imagen */
+  color: #444;
+  margin: 0 0 24px 0; /* un poco más de espacio antes de los botones */
+  line-height: 1.4;
+  text-align: left;
+}
+
+.buttons {
+  display: flex;
+  justify-content: flex-end; /* ✅ alineado a la derecha */
+  width: 100%;
+  gap: 8px; /* ligeramente menor para parecer más comprimido */
+}
+
+/* Botón LIKE delgado */
+.button {
+  padding: 6px 10px;
+  font-size: 12px;
+  border: 1px solid #ccc;
+  background-color: #f4f4f4;
+  color: #333;
+  border-radius: 4px;
+  cursor: pointer;
+  min-width: 50px;
+  transition: background-color 0.3s ease;
+}
+
+/* Segundo botón más ancho */
+.otherButton {
+  padding: 6px 14px;
+  font-size: 12px;
+  border: 1px solid #ccc;
+  background-color: #f4f4f4;
+  color: #333;
+  border-radius: 4px;
+  cursor: pointer;
+  min-width: 90px;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover,
+.otherButton:hover {
+  background-color: #ddd;
+}

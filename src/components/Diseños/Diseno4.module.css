@@ -1,0 +1,50 @@
+.background {
+  background-color: #d6e2f0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 260px;
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 16px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Contenedor azul para la imagen */
+.qrContainer {
+  background-color: #2c7dfa;
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* Imagen más pequeña y centrada */
+.qrImage {
+  width: 65%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Título */
+.title {
+  font-size: 16px;
+  font-weight: bold;
+  color: #1f3251;
+  margin-bottom: 12px;
+}
+
+/* Texto */
+.text {
+  font-size: 13px;
+  color: #7b879d;
+  line-height: 1.4;
+}

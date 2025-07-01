@@ -1,0 +1,79 @@
+/* Layout principal */
+.sidebar-layout {
+  display: flex;
+  flex: 1;
+  height: calc(100vh - 72px); /* Ajusta si el navbar tiene otra altura */
+  overflow: hidden;
+}
+
+/* Sidebar */
+aside {
+  width: 220px;
+  background-color: #f5f5f5;
+  padding: 1.25rem;
+  border-right: 1px solid #ddd;
+  box-shadow: 2px 0 8px rgba(0, 0, 0, 0.04);
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+
+aside nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+aside nav a {
+  display: block;
+  padding: 0.6rem 1rem;
+  border-radius: 6px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: background 0.2s, color 0.2s;
+}
+
+aside nav a:hover {
+  background-color: #e0e0e0;
+}
+
+/* Enlace activo */
+aside nav a.active {
+  background-color: #d1d8e0;
+  color: #000;
+}
+
+/* Contenido principal */
+.main-content {
+  flex: 1;
+  padding: 2rem 3rem;
+  overflow-y: auto;
+  background-color: #fff;
+  box-sizing: border-box;
+
+  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #222;
+}
+
+/* Responsive: ocultar sidebar en móviles */
+@media (max-width: 768px) {
+  .sidebar-layout {
+    flex-direction: column;
+  }
+
+  aside {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid #ddd;
+    box-shadow: none;
+  }
+
+  .main-content {
+    padding: 1rem;
+  }
+}

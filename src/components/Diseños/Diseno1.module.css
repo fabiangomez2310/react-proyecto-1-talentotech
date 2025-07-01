@@ -1,0 +1,86 @@
+.container {
+  background-color: #fff;
+  font-family: 'Arial', sans-serif;
+  min-height: 100vh;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  font-size: 14px;
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 16px; /* Reducido */
+}
+
+/* Contenedor de imagen + texto */
+.main {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 32px; /* Antes era 60px */
+  flex: 1;
+}
+
+/* Imagen */
+.image {
+  max-width: 360px; /* Un poco más pequeño para que el diseño respire mejor */
+  width: 100%;
+  height: auto;
+}
+
+/* Contenido textual */
+.content {
+  max-width: 460px;
+}
+
+.title {
+  font-size: 28px; /* Ligero ajuste */
+  font-weight: bold;
+  margin-bottom: 16px;
+  color: #333;
+}
+
+.message {
+  font-size: 15px;
+  color: #666;
+  margin-bottom: 24px;
+}
+
+.button {
+  padding: 10px 22px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  font-size: 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #444;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .main {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .image {
+    max-width: 220px;
+  }
+
+  .title {
+    font-size: 22px;
+  }
+
+  .message {
+    font-size: 13px;
+  }
+}
