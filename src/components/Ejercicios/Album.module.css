@@ -1,0 +1,58 @@
+.album {
+  display: flex;
+  align-items: center;
+  max-width: 400px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background-color: #fefefe;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  gap: 1.5rem;
+}
+
+.album img {
+  width: 200px;
+  height: 200px;
+  border-radius: 8px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.albumInfo {
+  flex: 1;
+}
+
+.albumInfo h1 {
+  font-size: 1.5rem;
+  color: #222;
+  margin: 0.5rem 0;
+}
+
+.albumInfo h2 {
+  font-size: 1.2rem;
+  color: #555;
+  margin: 0.5rem 0;
+}
+
+.albumInfo p {
+  font-size: 1rem;
+  color: #666;
+  margin: 0.3rem 0;
+}
+
+.buttonLike {
+  margin-top: 1rem;
+  padding: 0.6rem 1.2rem;
+  background-color: #0077cc;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.buttonLike:hover {
+  background-color: #005fa3;
+}

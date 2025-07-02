@@ -1,0 +1,17 @@
+.container {
+  max-width: 300px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+  text-align: center;
+}
+
+.time {
+  font-size: 3rem;
+  color: #333;
+  letter-spacing: 0.05em;
+  user-select: none;
+}
