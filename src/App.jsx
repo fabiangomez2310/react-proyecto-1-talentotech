@@ -15,6 +15,8 @@ import { Contador } from "./components/Ejercicios/Contador";
 import { ManejoFormulario } from "./components/Ejercicios/ManejoFormulario";
 import { Reloj } from "./components/Ejercicios/Reloj";
 import { Album } from "./components/Ejercicios/Album";
+import { ToDo } from "./components/ToDo/ToDo";
+import { SidebarToDo } from "./components/Sidebar/SidebarToDo";
 
 
 function App() {
@@ -39,6 +41,9 @@ function App() {
             <Route path="ejercicio3" element={<ManejoFormulario />} />
             <Route path="ejercicio4" element={<Reloj />} />
             <Route path="ejercicio5" element={<Album img="https://tse2.mm.bing.net/th/id/OIP.aZL9aCxUyFsyr0AaC6VPkgHaHa?rs=1&pid=ImgDetMain&o=7&rm=3" titulo="Rozes" tipo="Solista" album="Under the Grave" año={2016} lik={true} />} />
+          </Route>
+          <Route path="/tareas" element={<SidebarToDo />}>
+            <Route path="add" element={<ToDo />} />
           </Route>
         </Routes>
       </div>
